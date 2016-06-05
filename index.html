@@ -4,11 +4,11 @@
 <title>JQuery demo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script src="lib/jquery.min.js"></script>
-<script src="lib/jquery-ui.min.js"></script>
+<!--<script src="lib/jquery.min.js"></script>
+<script src="lib/jquery-ui.min.js"></script>-->
 
-<link rel="stylesheet" href="themes/fairTheme1.css" />
-  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<!--<link rel="stylesheet" href="themes/fairTheme1.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />-->
   
   
 
@@ -29,36 +29,37 @@
 <body>	
 	
 	<div data-role="page" id="index" data-theme="e">
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index">Home</a>
 						
 		</div>
 		
-		<div data-role="main" class="ui-content">
+		<div data-role="main" class="header2">
 			<p align="center"><font class="text2"><strong>159th Harford Fair</strong></font><br />
 			<font class="text1"><strong>August 22 - 27, 2016</strong></font><br /><br />
 			<img class="convention" src="images/thursday16a.jpg" alt="Chris Janson / Old Dominion" width=100% /></p>
 			
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#tableContents" data-transition="flip"><strong>Start Here!</strong></a></li>
+					<li><a class="navbarColor" href="#tableContents" data-transition="flip"><strong>Start Here!</strong></a></li>
 					
 				</ul>
-			</div>		
+			</div>
+			<br /><p class="small" align="center"><font class="text9">Visit us at <a href="http://www.harfordfair.com"> www.harfordfair.com</a></font>.</p>
 			<p align="center"><a href="#liability" data-transition="flip"><font class="text11">Liability Statement</font></a><br /><font class="text11">Disclaimer: All information in this app subject to change.</font><br />
 			</p>
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p align="center">&copy; Harford Agricultural Society 2016</p>
 		</div>	
 	</div>
 
 <!-- Table of Contents -->	
 	<div data-role="page" id="tableContents" data-theme="e">
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index">Home</a>
@@ -68,15 +69,15 @@
 		<div data-role="main" class="ui-content">	
 			
 			<!-- Entertainment page link -->
-			<div data-role="collapsible">
+			<div data-role="collapsible" class="header1">
 				<h1>Entertainment</h1>
-				<p><a class="green" href="#mainArena" data-transition="flip">Main Arena</a><br />
-				<a class="green" href="#allWeek" data-transition="flip">All Week</a><br />
-				<a class="green" href="#shadePavilion" data-transition="flip">Shade Pavilion</a></p>
+				<p><a href="#mainArena" data-transition="flip">Main Arena</a><br />
+				<a href="#allWeek" data-transition="flip">All Week</a><br />
+				<a href="#shadePavilion" data-transition="flip">Shade Pavilion</a></p>
 			</div>
 			
 			<!-- Daily page link -->
-			<div data-role="collapsible">
+			<div data-role="collapsible"  class="header1">
 				<h1>Daily Schedule</h1>
 				<p>
 				<a href="#sundaySchedule" data-transition="flip">Sunday</a><br />
@@ -90,19 +91,19 @@
 			</div>
 	
 			<!-- Directions link -->
-			<div data-role="collapsible">
+			<div data-role="collapsible" class="header1">
 				<h1>Directions</h1>
 				<p><a href="#directions" data-transition="flip">Directions</a></p>
 			</div>
 			
 			<!-- Purchase tickets link -->
-			<div data-role="collapsible">
+			<div data-role="collapsible"  class="header1">
 			   <h1>Purchase Tickets</h1>
 			   <p><a href="#tickets" data-transition="flip">Purchase Tickets</a><br /></p>
 			</div>
 	
 			<!-- Sponsors page  link -->
-			<div data-role="collapsible">
+			<div data-role="collapsible"  class="header1">
 			  <h1>Fair Sponsors</h1>
 			  <p><a href="#platinum" data-transition="flip">Platinum Sponsors</a></p>
 			  <p><a href="#gold" data-transition="flip">Gold Sponsors</a></p>
@@ -111,28 +112,28 @@
 			</div>
 	
 			<!--Vendors page link -->
-			<!--<div data-role="collapsible">
+			<!--<div data-role="collapsible" class="header1">
 			  <h1>Vendors</h1>
 			  <p><a class="green" href="#entertainment" data-transition="flip">Entertainment</a></p>
 			</div>-->
 	
 			<!-- Fair information link -->
-			<div data-role="collapsible">
+			<div data-role="collapsible" class="header1>
 			  <h1>Fair Information</h1>
 			  <p><a class="green" href="#admissions" data-transition="flip">Fair Admission Policy</a></p>
 			</div>
 	
 			<!-- News page link -->
-			<div data-role="collapsible">
+			<div data-role="collapsible" class="header1">
 			  <h1>Contact Us</h1>
 			  <p><a class="green" href="#contactUs" data-transition="flip">Fair Contacts</a></p>
 			</div>
 			
-			 For more information, visit our website <a href="http://www.harfordfair.com"> www.harfordfair.com</a>.
+			<p class="small" align="center"><font class="text9">Visit us at <a href="http://www.harfordfair.com"> www.harfordfair.com</a></font>.</p>
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer"  data-position="fixed" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>	
 	</div>
@@ -140,7 +141,7 @@
 <!-- Purchase tickets page -->
 	<div data-role="page" id="tickets" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>
@@ -149,15 +150,15 @@
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<p align="center"><font class="text2">Purchase Tickets</font><br />For Shows and Gate admission</p>
+			<p align="center"><font class="text2">Purchase Tickets</font><br /></p>
 			<p align="center">
 				<a class="green" href="https://www.BlueRibbonFair.com/BRFairProd/BlueRibbonStart.aspx?ID=1845"><img src="images/buytickets.jpg" alt="Tickets" /></a><br /><br />
-				For more information, visit our website <a href="http://www.harfordfair.com"> www.harfordfair.com</a>
+				
 			</p>
-			
+			<p class="small"><font class="text9">For more information, visit us at <a href="http://www.harfordfair.com"> www.harfordfair.com</a></font>.</p>
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer"  data-position="fixed" class="header1">
 			<h1>&copy; Harford Agricultural Society 2016</h1>
 		</div>
 		
@@ -168,7 +169,7 @@
 <!-- Main arena page -->
 	<div data-role="page" id="mainArena" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>
@@ -177,7 +178,7 @@
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<h3>Main Arena</h3>
+			<h3 class="white1">Main Arena</h3>
 			<p><font class="text9">Sunday<br /> 7:30 pm: Opening Ceremony<br /><br />
 			Monday<br /> 7:30 pm: Gas Mods and Stock Pickup Truck Pull<br /><br />
 			Tuesday<br />10:00 am: Farm Tractor Pull<br />7:30 pm: Hot Tractor Pull<br /><br />
@@ -188,7 +189,7 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer"  class="header1">
 			<h1>&copy; Harford Agricultural Society 2016</h1>
 		</div>
 		
@@ -198,14 +199,14 @@
 	<!-- Shade Pavilion page -->
 	<div data-role="page" id="shadePavilion" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<h3>Shade Pavilion</h3>
+			<h3 class="white1">Shade Pavilion</h3>
 			<p><font class="text9">Monday<br />12:30: &nbsp;Illusions by Jeremy<br />2:30: Stanley Kalafut &amp; The Brass Majors<br />4:30: Stanley Kalafut &amp; The Brass Majors<br />6:00: &nbsp;Fair Pie & Cake Auction<br />
 			8:00: &nbsp;Them Boys<br /><br />
 			Tuesday<br />12:30: &nbsp;Mountain View Chimettes<br />12:30: &nbsp;Tri-State Gospel Singers<br />4:30: &nbsp;Dani-elle<br />7:30: &nbsp;Dani-elle<br /><br />
@@ -216,7 +217,7 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<h1>&copy; Harford Agricultural Society 2016</h1>
 		</div>
 		
@@ -225,7 +226,7 @@
 	
 <!-- All Week page -->
 	<div data-role="page" id="allWeek" data-theme="e">
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">159th Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>		
@@ -239,17 +240,17 @@
 			<a href="http://www.jimhoughtonenterprises.com"><img src="images/houghtonLogo.jpg" alt="Houghton Logo" height=80px /></a><br />Click icon for fair ride specials<br /></font></p>
 			
 			<p align="center"><font class="text9"><u>North Arena</u><br /><strong>Brunon Blaszak's Royal Bengal Tigers</strong><br />
-			<img src="images/tiger02b.jpg" alt="Royal Bengal Tigers" width=90% /><br />Visit their <a href="http://brunostigers.com/">website</a></font></p>
+			<img src="images/tiger02b.jpg" alt="Royal Bengal Tigers" width=90% /></font></p>
 			<p align="center"><font class="text9"><u>New property - South End</u><br /><strong>Panfilov's Performing Pets</strong><br />
 			<img src="images/panfilova02a.jpg" alt="Panfilov's Performing Pets" width=90% /><br />
-			Visit their <a href="http://panfilov.webs.com/">website</a></font></p>
+			</font></p>
 			
 			<p align="center"><font class="text9"><u>Chainsaw Carving Demonstration</u><br />by Kevin Treat<br />
 			<img src="images/woodCarver.jpg" alt="Chainsaw Carving" width=70% /><br />
-			Visit his <a href="http://www.sawptician.com" />website</a></font></p>			
+			</font></p>			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 	
@@ -258,7 +259,7 @@
 	<!-- Sunday page -->
 	<div data-role="page" id="sundaySchedule" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>
@@ -267,7 +268,7 @@
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<h3 align="center">Sunday Schedule</h3>
+			<h3  class="white1" align="center">Sunday Schedule</h3>
 			<font class="text9">
 		    <p class="small">2:00: &nbsp;Draft Horse &amp; Pony Show</p>
 			<p class="smallColor">3:00: &nbsp;Fair Queen Contest Preliminary<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dining Hall<br /></p>
@@ -279,7 +280,7 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 		
@@ -290,14 +291,14 @@
 	<!-- Monday page -->
 	<div data-role="page" id="mondaySchedule" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<h3 align="center">Monday Schedule</h3>
+			<h3 class="white1" align="center">Monday Schedule</h3>
 		<font class="text9">
 			<p align="center">	
 				8:00: Gates Open for Admission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 and over - $6.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 and under - Free</p>
@@ -348,7 +349,7 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 		
@@ -358,14 +359,14 @@
 <!-- Tuesday page -->
 	<div data-role="page" id="tuesdaySchedule" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<h3 align="center">Tuesday - DTE Energy Day</h3>
+			<h3 class="white1" align="center">Tuesday - DTE Energy Day</h3>
 			<font class="text9"><p align="center">	
 				8:00: Gates Open for Admission<br />12 and up $6.00 - 11 and under Free</p>
 			<p class="smallColor">
@@ -406,7 +407,7 @@
 				7:30: &nbsp;Hot Tractor Pull</p></font>			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 		
@@ -416,14 +417,14 @@
 <!-- New Wednesday page -->
 	<div data-role="page" id="wednesdaySchedule" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 
 		<div data-role="main" class="ui-content">
-			<h3 align="center">Wednesday - PA Lottery Day</h3>
+			<h3 class="white1" align="center">Wednesday - PA Lottery Day</h3>
 			<font class="text9">
 			<p align="center">
 			Senior Citizen's Day<br />Anyone over 60 - Admission $5.00<br />8 am to 5 pm only<br />
@@ -484,7 +485,7 @@
 				7:30: &nbsp;Diesel Truck Pull</p></font>						
 		</div>
 	
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 	</div>
@@ -494,14 +495,14 @@
 	<!-- Thursday page -->
 	<div data-role="page" id="thursdaySchedule" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<h3 align="center">Thursday<br />Popple Construction Day</h3>
+			<h3 class="white1" align="center">Thursday<br />Popple Construction Day</h3>
 			<font class="text9">
 			<p align="center">8:00: Gates Open for Admission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 and over - $6.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 and under - Free</p>
 			<p class="small">
@@ -555,7 +556,7 @@
 				7:30: &nbsp;Old Dominion / Chris Janson</p></font>			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 		
@@ -565,14 +566,14 @@
 	<!-- Friday page -->
 	<div data-role="page" id="fridaySchedule" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<h3 align="center">Friday Schedule</h3>
+			<h3 class="white1" align="center">Friday Schedule</h3>
 			<font class="text9">
 			<p align="center">8:00: Gates Open for Admission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 and over - $6.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 and under - Free</p>
 			<p class="smallColor">
@@ -628,7 +629,7 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 		
@@ -638,14 +639,14 @@
 <!-- Saturday page -->
 	<div data-role="page" id="saturdaySchedule" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<h3 align="center">Saturday Schedule<br />NEP Telephone Day</h3>
+			<h3 class="white1" align="center">Saturday Schedule<br />NEP Telephone Day</h3>
 			<font class="text9">
 			<p align="center">8:00: Gates Open for Admission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 and over - $6.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 and under - Free</p>
 			<p class="small">
@@ -702,7 +703,7 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 		
@@ -714,26 +715,26 @@
 	<!-- Directions page -->
 	<div data-role="page" id="directions" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<h2 align="center">Directions</h2>
+			<h3 class="white1" align="center">Directions</h3>
 			<p>
 				
-			<p class="just04"><b>From the South (Scranton)</b></p>
+			<p><font class="text4">From the South (Scranton)</font></p>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="text7">Take Route 81 North to Harford Exit 217, at end of ramp turn left.  Go approximately 1 mile to stop sign.  Turn right up hill.  Fair grounds at the top of the hill.</font><br /><br />
-			<p class="just04"><b>From the North (Binghamton)</b></p>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="text7">Take Route 81 South to Harford Exit 217, at end of ramp turn right.  Go approximately 1 mile to stop sign.  Turn right up hill.  Fair grounds at the top of the hill.</font><br /><br />
-			<p class="just04"><b>GPS: 485 Fair Hill Rd, New Milford, Pa. 18834</b></p>
-			<p class="just04">On some GPS simply enter Harford Fair Grounds, Harford, Pa</p><br />
+			<p><font class="text4">From the North (Binghamton)</font></p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="text7">Take Route 81 South to Harford Exit 217, at end of ramp turn right.  Go approximately 1 mile to stop sign.  Turn right up hill.  Fair grounds at the top of the hill.<br /><br />
+			<p class="just04">GPS: 485 Fair Hill Rd, New Milford, Pa. 18834</p>
+			<p class="just04">On some GPS simply enter Harford Fair Grounds, Harford, Pa</p></font><br />
 			<br /><p align="center">
               <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Harford+Fair+Grounds,+Fair+Hill+Road,+New+Milford,+Harford,+PA&amp;aq=0&amp;oq=harford+fair+grounds,+harford,+pa&amp;sll=41.801135,-75.702496&amp;sspn=0.110691,0.222988&amp;ie=UTF8&amp;hq=Harford+Fair+Grounds,+Fair+Hill+Road,+New+Milford,&amp;hnear=Harford,+Susquehanna+County,+Pennsylvania&amp;t=m&amp;ll=41.792392,-75.698069&amp;spn=0.022201,0.007717&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Harford+Fair+Grounds,+Fair+Hill+Road,+New+Milford,+Harford,+PA&amp;aq=0&amp;oq=harford+fair+grounds,+harford,+pa&amp;sll=41.801135,-75.702496&amp;sspn=0.110691,0.222988&amp;ie=UTF8&amp;hq=Harford+Fair+Grounds,+Fair+Hill+Road,+New+Milford,&amp;hnear=Harford,+Susquehanna+County,+Pennsylvania&amp;t=m&amp;ll=41.792392,-75.698069&amp;spn=0.022201,0.007717" style="color:#0000FF;text-align:left">View Larger Map</a></small></p>
-			  <p align="center">
-			  Traveling Far to Visit Our Fair?<br />Here are some great places to stay.</p>
+			  <p align="center"><font class="text4">
+			  Traveling Far to Visit Our Fair?<br />Here are some great places to stay.</font></p>
 			  <font class="text7">
 			  
 			  <div class="ui-grid-solo">
@@ -762,7 +763,7 @@
 			</font>
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 		
@@ -772,7 +773,7 @@
 	
 <!-- Admissions Info page -->	
 	<div data-role="page" id="admissions" data-theme="e">
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>		
@@ -781,7 +782,7 @@
 
 	
 		<div data-role="main" class="ui-content">
-			<h3 align="center">Fair Admissions Policy</h3><font class="text9">
+			<h3 class="white1" align="center">Fair Admissions Policy</h3><font class="text9">
 			<ul>
 			<li>FREE PARKING</li><br />
 			<li>GRANDSTAND RESERVED SEATING</li><br />
@@ -792,7 +793,7 @@
 			<p align="center"><font class="text9"><b>No pets permitted on the fairgrounds</b> - Service Animals Only</font></p><br />		
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 	
@@ -800,7 +801,7 @@
 	
 <!-- Contact us page -->		
 	<div data-role="page" id="contactUs" data-theme="e">
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>		
@@ -809,7 +810,7 @@
 
 	
 		<div data-role="main" class="ui-content">
-			<p align="center">
+			<p align="center"><font class="text9">
 			<u>Harford Agricultural Society</u><br />Directors<br />
 					   President: Dr. Michael Kowalewski<br />
 					   First vice&#45;President: Jason Miller<br />
@@ -823,27 +824,28 @@
 					Heidi Stephens-Pavelski<br />
 					Ron Stiles<br />
 					Brian Tyler<br />
-					David Tyler</p>
+					David Tyler</font></p>
 					
 					<p align="center" class="lineHeight2">
-				<font class="text17"><u>Harford Fair Secretary</u></font><br />
+				<font class="text8"><u>Harford Fair Secretary</u><br />
 					LouAnn Kiefer (570) 434&#45;4315<br />
-				hfair@nep.net</p>
+				hfair@nep.net</font></p>
 					
 					<p align="center" class="lineHeight2">
-				<font class="text17"><u>Commercial Space Secretary</u></font><br />
+				<font class="text8"><u>Commercial Space Secretary</u><br />
 					Donna Lewis (570) 434&#45;4302<br />
 				hfairspace@nep.net
 				<br /><br />
-				Mailing Address: 485 Fair Hill Rd., New Milford PA 18834<br />
+				Mailing Address: 485 Fair Hill Rd.,<br />New Milford PA 18834<br />
 				Office Phone: 570-434-4300<br />
 				Office Fax: 570-434-4310<br />
 				E-mail: hfair@nep.net<br /><br />
-				<a href="https://www.facebook.com/pages/Harford-Fair/162001413972493"><img class="leftCol" src="images/likeUs3.jpg" alt="Like Us" /></a></p></p><br />
+				<a href="https://www.facebook.com/pages/Harford-Fair/162001413972493"><img class="leftCol" src="images/likeUs3.jpg" alt="Like Us" /></a></font></p>
+				<p class="small"><font class="text9">Visit us at <a href="http://www.harfordfair.com"> www.harfordfair.com</a></font>.</p>
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 	
@@ -851,7 +853,7 @@
 
 <!-- Liability page -->		
 	<div data-role="page" id="liability" data-theme="e">
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>		
@@ -867,7 +869,7 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<p>&copy; Harford Agricultural Society 2016</p>
 		</div>
 	
@@ -876,15 +878,15 @@
 <!-- Bronze Sponsors page -->
 	<div data-role="page" id="bronze" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<p align="center">2016 Harford Fair Sponsors</p>
-			<p align="center">Bronze</p><hr />
+			<p align="center"><font class="text4">2016 Harford Fair Sponsors</font></p>
+			<h3 class="white1" align="center">Bronze</h3><hr />
 			
 			<div class="ui-grid-solo">
 				 <div class="ui-block-a"><span>Allens Radiator and Air Conditioning</span></div>
@@ -966,7 +968,7 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<h1>&copy; Harford Agricultural Society 2016</h1>
 		</div>
 		
@@ -975,15 +977,15 @@
 <!-- Silver Sponsors page -->
 	<div data-role="page" id="silver" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<p align="center">2016 Harford Fair Sponsors</p>
-			<p align="center">Silver</p><hr />
+			<p align="center"><font class="text4">2016 Harford Fair Sponsors</font></p>
+			<h3 class="white1" align="center">Silver</h3><hr />
 			
 			<div class="ui-grid-solo">
 				 <div class="ui-block-a"><span>Andre and Son</span></div>
@@ -1004,7 +1006,7 @@
 			
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<h1>&copy; Harford Agricultural Society 2016</h1>
 		</div>
 		
@@ -1013,15 +1015,15 @@
 <!-- Gold Sponsors page -->
 	<div data-role="page" id="gold" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<p align="center">2016 Harford Fair Sponsors</p>
-			<p align="center">Gold</p><hr />
+			<p align="center"><font class="text4">2016 Harford Fair Sponsors</font></p>
+			<h3 class="white1" align="center">Gold</h3><hr />
 			
 			<div class="ui-grid-a">
 				 <div class="ui-block-a"><span><a href="https://www.communitybankna.com/index.htm"><img src="Sponsors/communityBank2.jpg" alt="Community Bank" /></a></span></div>
@@ -1093,15 +1095,15 @@
 <!-- Platinum Sponsors page -->
 	<div data-role="page" id="platinum" data-theme="e">
 	
-		<div data-role="header">
+		<div data-role="header" class="header1">
 			<a href="javascript:history.go(-1)">Back</a>
 			<p align="center">2016 Harford Fair</p>
 			<a href="#index" data-transition="flip">Home</a>			
 		</div>
 		
 		<div data-role="main" class="ui-content">
-			<p align="center">2016 Harford Fair Sponsors</p>
-			<p align="center">Platinum</p><hr />
+			<p align="center"><font class="text4">2016 Harford Fair Sponsors</font></p>
+			<h3 class="white1" align="center">Platinum</h3><hr />
 			
 			<div class="ui-grid-a">
 				 <div class="ui-block-a"><span><a href="http://www.nep.net"><img src="Sponsors/nep3.jpg" alt="NEP" /></a></span></div>
@@ -1159,7 +1161,7 @@
 	
 		
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" class="header1">
 			<h1>&copy; Harford Agricultural Society 2016</h1>
 		</div>
 		
